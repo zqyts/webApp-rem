@@ -1,0 +1,29 @@
+/*上面的代码则是通过1rem=20px来换算的，从哪里看出来呢？从最大的一个值640出发，
+假如你的设计稿是750的话，那你还要设计更多的媒体查询，换算比例保持一致就可以了。
+那如果我想要换算比例为1rem=100呢？按照上面的规则，最大的值为：html:font-size:100/16*100%，
+其它的则按比例，比如480px，则为480/640*(100/16*100%)。*/
+
+html {
+  font-size: 62.5%
+}
+
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 94%!important
+  }
+}
+
+@media only screen and (min-width: 561px) {
+  html {
+    font-size: 109%!important
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 125%!important
+  }
+  body {
+    max-width: 640px
+  }
+}

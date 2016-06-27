@@ -56,4 +56,3 @@
     }, false);
   }
 })(640, 640);
-// link:http://www.tuicool.com/articles/eM3mQfR
